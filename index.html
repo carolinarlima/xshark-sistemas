@@ -1,11 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>X-Shark Sistemas</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+    <title>xShark Sistemas</title>
+  </head>
+  <body>
+    <main>
+      <header class="main-header">
+        <a href="#home" id="home" class="logo">
+          <img
+            class="img-mobile"
+            src="img/logo.svg"
+            alt="Ícone linear de um caminhão basculante laranja."
+          />
+          <img
+            class="img-desktop"
+            src="img/logo-xshark.png"
+            alt="Logotipo Eco Master com ícone de caminhão basculante à esquerda."
+          />
+        </a>
+        <div class="navigation-menu">
+          <label for="menu">
+            <img src="img/menu.png" alt="menu" />
+          </label>
+          <input
+            type="checkbox"
+            id="menu"
+            name="menu"
+            aria-required="true"
+            hidden
+          />
+          <nav>
+            <ul class="list-links">
+              <li>
+                <a href="#about" title="Sobre Nós">Sobre Nós</a>
+              </li>
+              <li>
+                <a href="#products" title="Produtos">Produtos</a>
+              </li>
+              <li>
+                <a href="#contact" title="Acessar Contato">Contato</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </main>
+  </body>
 </html>
