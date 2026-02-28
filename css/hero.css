@@ -1,0 +1,98 @@
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.hero .text-content {
+  margin-top: 80px;
+  padding: 10px;
+  text-align: start;
+}
+
+.hero .text-content i {
+  color: var(--secundary-color);
+  margin-bottom: 20px;
+}
+
+.hero .text-content h2 {
+  margin-bottom: 80px;
+}
+
+.hero .text-content .button {
+  width: 300px;
+  height: 66px;
+  display: block;
+  line-height: 66px;
+  border-radius: 36px;
+  margin: auto;
+  text-align: center;
+  font-size: var(--body1-size);
+  font-weight: var(--title-weight);
+  font-family: "Inter";
+  text-decoration: none;
+  color: var(--tertiary-color);
+  background-color: var(--primary-color);
+  cursor: pointer;
+}
+
+.hero .img img {
+  margin-top: 80px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr 1fr;
+    padding: 12px;
+  }
+
+  .hero .text-content h2 {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero .button:hover {
+    background-color: var(--secundary-color);
+    color: var(--tertiary-color);
+  }
+
+  .hero .text-content i:hover {
+    color: var(--primary-color);
+  }
+
+  .hero .text-content h2 {
+    margin-bottom: 120px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero {
+    padding: 50px;
+  }
+
+  .hero .img img {
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .hero {
+    padding: 100px;
+  }
+
+  .hero h1 {
+    font-size: 70px;
+  }
+
+  .hero h2 {
+    font-size: 60px;
+  }
+
+  .hero .img img {
+    margin-top: 30px;
+    padding: 20px;
+  }
+}
