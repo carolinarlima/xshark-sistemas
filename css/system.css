@@ -1,6 +1,15 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.system{
+  margin-bottom: 88px;
+}
+
 .system .large-text {
   margin-bottom: 60px;
   text-align: center;
+  margin: 12px;
 }
 
 .system .row .card {
