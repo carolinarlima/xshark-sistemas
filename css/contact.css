@@ -1,0 +1,92 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.contact {
+  padding: 24px;
+  background-color: var(--background-card);
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.contact .section-title {
+  text-align: center;
+}
+
+.contact .contact-info h3 {
+  color: var(--primary-color);
+  font-weight: var(--title-weight);
+  text-align: start;
+}
+
+.contact .contact-info h4 {
+  color: var(--text-primary-color);
+  margin-top: 5px;
+  text-align: start;
+}
+
+.contact .container .contact-info .info-item {
+  border-left: 4px solid var(--secundary-color);
+  padding-left: 15px;
+}
+
+.contact .container .contact-info .info-item .button {
+  width: 240px;
+  height: 60px;
+  display: block;
+  line-height: 60px;
+  border-radius: 36px;
+  text-align: center;
+  font-size: var(--body1-size);
+  font-weight: var(--title-weight);
+  font-family: "Inter";
+  text-decoration: none;
+  color: var(--tertiary-color);
+  background-color: var(--primary-color);
+  cursor: pointer;
+}
+
+.contact .map-container .map {
+  width: 290px;
+  overflow: hidden;
+  height: 300px;
+  border: 0px;
+  margin-top: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .contact .section-title {
+    grid-column: span 2;
+    text-align: center;
+  }
+  .contact .map-container .map {
+  width: 400px;
+  height: 400px;
+}
+}
+
+@media screen and (min-width: 1024px) {
+  .contact .map-container .map {
+    width: 500px;
+    height: 500px;
+  }
+
+  .contact .container .contact-info .info-item .button:hover {
+    background-color: var(--secundary-color);
+    color: var(--tertiary-color);
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .contact{
+    padding: 50px;
+  }
+  .contact .map-container .map {
+  width: 1200px;
+  height: 1200px;
+}
+}
