@@ -55,7 +55,7 @@
 
 .footer-bottom .footer-container a {
   text-decoration: none;
-  color: var(--text-secundary-color);
+  color: var(--text-primary-color);
 }
 
 @media screen and (min-width: 1024px) {
