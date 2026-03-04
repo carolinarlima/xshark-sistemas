@@ -15,6 +15,7 @@
   font-weight: var(--menu-text-weight);
   font-size: 24px;
   color: var(--primary-color);
+  transition: 0.3s;
 }
 
 .logo {
@@ -76,10 +77,6 @@ nav {
     width: 467px;
   }
 
-  .navigation-menu ul a {
-    transition: 0.3s;
-  }
-
   .navigation-menu li {
     margin: 0;
   }
@@ -103,10 +100,11 @@ nav {
     display: none;
   }
 
-  .navigation-menu li a:hover {
+  .navigation-menu ul li a:hover {
     color: var(--secundary-color);
     text-decoration: underline;
     text-underline-offset: 8px;
+    padding-left: 3px;
   }
 }
 
